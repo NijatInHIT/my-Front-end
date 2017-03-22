@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> css sprite</title>
+    <style type="text/css">
+    *{
+        margin:0;
+        padding: 0;
+    }
+        div{
+            background: #f8f8f8f;
+            width: 100px;
+            border: 1px solid   #bbb;
+
+        }
+        nav{
+            margin-top:80px;
+            width: 150px;
+            height: 31px;
+            border:2px solid #f8f8f8;
+            background-color: aqua;
+            position: absolute;
+            left: -130px;
+            transition: all 0.5s ease-out;
+        }
+        h3,ul{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            height: 31px;
+            line-height: 31px;
+            background-color: white;
+            border-bottom:2px solid #dedede;
+            display: block;
+        }
+        li h3{
+        
+            font-size: 14px;
+            font-weight: 400;
+        }
+        i{
+            background: url(./sidebar.png);
+            float: left;
+            width: 30px;
+            height: 25px;
+            margin:3px 10px 0 0;
+        }
+        .cat-1 i{
+            background-position:0 0;
+        }
+        .cat-2 i{
+            background-position:0px -24px;
+        }
+        .cat-3 i{
+            background-position:0px -48px;
+        }
+        .cat-4 i{
+            background-position:0px -72px;
+        }
+        .cat-5 i{
+            background-position:0px -96px;
+        }
+        .cat-6 i{
+            background-position:0px -120px;
+        }
+        .cat-7 i{
+            background-position:0px -144px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+<div class='div1'>
+    <ul>
+        <li class ='cat-1'>
+            <i></i>
+            <h3>子子</h3>
+        </li>
+        <li class ='cat-2'>
+            <i></i>
+            <h3>上衣</h3>
+        </li>
+        <li class ='cat-3'>
+            <i></i>
+            <h3>裤子</h3>
+        </li>
+        <li class ='cat-4'>
+            <i></i>
+            <h3>帽子</h3>
+        </li>
+        <li class ='cat-5'>
+            <i></i>
+            <h3>袜子</h3>
+        </li>
+        <li class ='cat-6'>
+            <i></i>
+            <h3>鞋子</h3>
+        </li>
+        <li class ='cat-7'>
+            <i></i>
+            <h3>吱吱</h3>
+        </li>
+    </ul>
+</div>
+</nav>
+<script type="text/javascript">
+    oNave=document.getElementsByTagName('nav')[0];
+    oNave.onmouseover=function(){
+        oNave.style.left='0px';
+    }
+    oNave.onmouseout=function(){
+        oNave.style.left='-120px';
+    }
+
+
+</script>
+
+</body>
+</html>
