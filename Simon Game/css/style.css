@@ -1,0 +1,198 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+body {
+  background: #f5f5f5;
+  overflow: hidden;
+  background: url("http://static.simpledesktops.com/uploads/desktops/2012/12/18/ChristmasJumperPaper.png") 0 0/100vw 100vh  fixed;
+}
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.four-part{
+  opacity: 1;
+  width:47%;
+  height: 47%;
+  float: left;
+  margin: 9px;
+  border-radius: 11px;
+  transition: all .1s linear;
+  
+}
+
+.content{
+  z-index:0;
+  overflow: hidden;
+  width:600px;
+  height: 600px;
+  position: relative;
+  margin:5% auto;
+}
+.content::after{
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0px;top:0;right: 0;bottom:0;
+  background:url("http://static.simpledesktops.com/uploads/desktops/2012/12/18/ChristmasJumperPaper.png") 0 0/100vw 100vh fixed;
+  filter: blur(10px);
+}
+#part-1{
+  border-top-left-radius: 100%; 
+  background: #00a74a;
+  box-shadow: 0px 3px 0px 5px #00a74a;
+}
+.part-1-light{
+  background:#00F16A!important;
+  box-shadow: 0px 3px 0px 5px #00F16A!important;
+}
+
+
+#part-2{
+  border-top-right-radius: 100%; 
+  background:#9f0f17;
+  box-shadow: 0px 3px 0px 5px #9f0f17;
+}
+.part-2-light{
+  background:#F53641!important;
+  box-shadow: 0px 3px 0px 5px #F53641!important;
+}
+
+#part-3{
+  border-bottom-left-radius: 100%;
+  background:#cca707;
+  box-shadow: 0px 3px 0px 5px #cca707;
+}
+.part-3-light{
+  background:#F9DC60!important;
+  box-shadow: 0px 3px 0px 5px #F9dc60!important;
+}
+
+#part-4{
+  border-bottom-right-radius: 100%; 
+  background:#094a8f;
+  box-shadow: 0px 3px 0px 5px #094a8f;
+}
+.part-4-light{
+  background:#4392E6!important;
+  box-shadow: 0px 3px 0px 5px #4392E6!important;
+}
+
+
+
+
+.display{
+  width:50%;
+  height: 50%;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  background-color: #98BFD0;
+  border-radius: 100%;
+  border:17px solid #AF8C8C;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.black{
+  background: blueviolet;
+}
+
+.gameName{
+  position: absolute;
+  left: 15%;
+  top:13%;
+  font-size: 40px;
+}
+
+.start{
+  left: 68%;
+  top:38%;
+  height: 35px;
+  width:35px;
+  position: absolute;
+  border-radius: 100%;
+  box-shadow: 0 0 0 5px salmon inset,0 0 0 10px darkcyan inset,0 0 0 12px brown inset;
+}
+.start:after{
+  content: 'start!';
+  display: inline;
+  position: absolute;
+  top:116%;
+  left:-70%;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+button{
+  outline:none !important;
+}
+button:hover{
+  cursor: pointer;
+}
+
+.show-level{
+  word-break: break-all;
+  color:#DC0D29;
+  background-color: #f5f5f5;
+  width:80px;
+  height: 50px;
+  box-shadow: 0 0 0 5px #AF8C8C;
+  position: absolute;
+  left: 16%;
+  top:40%;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 50px;
+  word-spacing: 15px;
+}
+.show-level::after{
+  content: ' ';
+  display: block;
+  position: absolute;
+  top:0;left: 0;right: 0;bottom: 0;
+  background: #430710;
+  opacity: 0.6;
+  border-radius: 6px;
+}
+.show-word{
+  color:#e46471;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin:3px;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.word-flick{
+  animation: myFlick 0.4s linear infinite  alternate;
+}
+
+@keyframes myFlick {
+  0% {color:transparent;}
+  40% {color:transparent;}
+  50%   {color:#e46471;}
+  100%   {color:#e46471;}
+}
+
+
+.clickDown{
+  box-shadow: none!important;
+  opacity: 0.5;
+}
+
+.show-grade{
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  left: 38%;
+  top: 75%;
+  letter-spacing: 3px;
+}
