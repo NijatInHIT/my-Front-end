@@ -1,0 +1,130 @@
+html,body{
+	height: 100%;
+}
+body{
+  background-color:#818181;
+  font-family: 'Orbitron', sans-serif !important;
+}
+
+*{
+	margin:0;
+	padding: 0;
+}
+p{
+	margin-bottom: 0;
+}
+
+
+#main{
+	height:650px;
+	border:1px solid black;
+}
+
+#bottom{
+	height: 20%;
+	border:1px solid black;
+	text-align: center;
+	padding: 35px;
+
+}
+
+#caculator{
+	border:3px solid #908b85!important;
+	box-shadow:4px 6px 15px 9px;
+	background-color: #dfd8d0;
+	border-radius: 35px;
+	width: 315px;
+	height: 75%;
+	margin:0 auto;
+	border:1px solid black;
+	margin-top: 105px;
+}
+
+#top{
+	height: 10%;
+	color:#333;
+	text-align: center;
+	padding-top: 23px;
+}
+
+#top p{
+	margin-bottom: 0;
+	height: 100%;
+	line-height: 100%;
+}
+
+#show{
+	box-shadow:0px 0px 4px 2px #b4b39d inset;
+	border-radius: 11px;
+	border:2px solid #b4b39d;
+	margin:0 auto;
+	width:85%;
+	height:15%;
+	background-color: #c3c2ab;
+	color:#333;
+
+}
+
+#answer{
+	text-align: right;
+	height: 65%;
+	padding: 8px 5px 5px 5px;
+	box-sizing: border-box;
+	line-height: 100%;
+	font-size: 2em;
+}
+
+#input{
+	text-align: right;
+	padding: 0 5px 5px 5px;
+	font-size: 1em;
+}
+
+#btns{
+	margin:15px auto;
+	width: 95%;
+	height: 75%;
+	box-sizing: border-box;
+}
+button:focus{
+	outline: none;
+}
+button{
+	font-family: 'Orbitron', sans-serif !important;
+	color: seashell;
+	position: relative;
+	box-shadow:1px 5px 9px 3px #333;
+	border-radius: 7px;
+	background-color: #3a3a3a;
+	outline: none;
+	border:none;
+	display: inline-block;
+	height:50px;
+	width:51px;
+	box-sizing: border-box;
+	margin:6px 9px;
+	vertical-align: text-top;
+	cursor: pointer;
+}
+
+.equal{
+	height:118px ;
+}
+
+.zero{
+	width: 128px ;
+}
+
+.red{
+	background-color: red;
+}
+
+.goUp{
+	position: relative;
+	margin-top: -58px;
+}
+
+.press{
+	box-shadow:0px 1px 2px 1px #333;
+	top: 3px;
+}
